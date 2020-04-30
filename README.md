@@ -13,28 +13,28 @@ Data Science is giving us deep insights into different fields helping us to make
 4. Modeling
 5. Evaluation
 6. Deployment
-After finalizing our Questions, we have to transform and clean our data in a form so that we could answer our questions. 
+- After finalizing our Questions, we have to transform and clean our data in a form so that we could answer our questions. 
 
+### Libraries Used
+We have used following Libraries in this project
+- Numpy
+- Pandas
+- Matplotlib
+- SKLearn
 
-## Cleaning Data
-We will take following steps to clean our data
-1. Transpose Data, so that Indicators become columns of data
-2. Rename Columns with Indicators name for easy access
-3. Removing Country Name, Country Code Columns and Indicator Name and Indicator Code Rows from eliminating redundancy
-4. For developing model, we will remove all rows containing even single Null value
+### Files In The Repository
+Following is the description of files in repository
+- pak_wdi.csv = CSV Data about Indicators of Pakistan from WDI
+- Pakistan - World Development Index.ipynb = Notebook containing all pyhton code of project
+- README.md = Readme file of the project
 
-## Answering our questions
-To answer our first three questions, we will store Pakistan’s GDP, Military Expenditures, Government Expenditures (all three in current USD) and Pakistan’s Population, Inflation Rate in separate variables as List. We will Plot
-1. Pakistan’s GDP against Military Expenditure to answer first question
-2. Pakistan’s Population against Inflation Rate for second question
-3. Pakistan’s GDP and Government Expenditures for third question.
-4. To develop our model, we will use Total Exports, Total Imports, GNS, GNE, Military Expenditures and Personal Remittances as X variable and GDP as Y variable. We will use Linear regression model with test_size=.15 and random_state=50.
-
-## Findings
+## Summary of Results
 - Answer 1- We found that Military expenditures of Pakistan have increased very slightly when compared to increased in GDP as they show a very linear behavior.
 - Answer 2- From the graph we can conclude that there is not significant relationship between Population and Inflation of Pakistan. This is because the graph is very uneven. If there was a relation between these two, then the graph should have shown relatively linear behavior
 - Answer - 3: From the graph we can conclude Expenditures of Pakistan's Government have been greater than GDP of Pakistan for most of the time. Hence, we can conclude that Pakistan have always mismanaged its Budget.
 - Model: When tested our model to predict GDPs of Pakistan over last years against real GDPs, we were able to get predictions shown in notebook execution.
 
-## Conclusion
-We have seen that data science helps us a lot to easily conclude results based on historical data and make predictions for future. Although this model may still be improved for better predictions, it still helps a lot to make better calculated predictions. 
+- We have seen that data science helps us a lot to easily conclude results based on historical data and make predictions for future. Although this model may still be improved for better predictions, it still helps a lot to make better calculated predictions. 
+
+## Credits/Acknowledgments
+Data used in this project is provided by World Development Index.
